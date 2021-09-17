@@ -40,7 +40,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-4q-fiz">
-                                        <rect key="frame" x="1" y="390" width="103" height="44"/>
+                                        <rect key="frame" x="8" y="360" width="103" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Celsius">
@@ -52,8 +52,15 @@
                                             <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHc-r2-bl7"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkY-oV-V2L">
+                                        <rect key="frame" x="143" y="174" width="119" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="125"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-o2-VJ9">
-                                        <rect key="frame" x="269" y="390" width="152" height="44"/>
+                                        <rect key="frame" x="262" y="360" width="152" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Fahrenheint">
@@ -65,13 +72,6 @@
                                             <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBM-hz-7CY"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TkY-oV-V2L">
-                                        <rect key="frame" x="143" y="174" width="119" height="80"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="125"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                             </view>
@@ -99,6 +99,7 @@
                         <outlet property="lbResult" destination="xY6-36-SAL" id="xfV-Rh-8M4"/>
                         <outlet property="lbResultIUnit" destination="8bC-Xf-vdC" id="JU3-jZ-M8d"/>
                         <outlet property="lbResultUnit" destination="xY6-36-SAL" id="OGn-ci-wkh"/>
+                        <outlet property="lbUnit" destination="zgR-PB-4EM" id="ThS-od-6Ud"/>
                         <outlet property="tfValue" destination="TkY-oV-V2L" id="Iye-YA-AAT"/>
                     </connections>
                 </viewController>
